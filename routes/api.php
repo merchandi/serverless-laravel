@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\Api\CarController;
+use App\Http\Controllers\Api\DocumentController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -27,3 +28,6 @@ Route::apiResource('cars', CarController::class);
 Route::post('/cars/update/{id}', [CarController::class, 'update']);
 
 Route::delete('/cars/delete/{id}', [CarController::class, 'delete']);
+Route::post('/documents', [DocumentController::class, 'store']);
+
+Route::delete('/documents/{id}', [DocumentController::class, 'destroy']);

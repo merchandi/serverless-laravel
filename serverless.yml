@@ -1,3 +1,5 @@
+org: omardevclau
+app: laravel
 service: laravel
 
 provider:
