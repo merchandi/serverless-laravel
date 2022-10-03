@@ -45,8 +45,8 @@ plugins:
 
 custom:
   customDomain:
-    domainName: serverless.merchandi.xyz
-    basePath: ""
+    domainName: sls-laravel.merchandi.xyz
+    apiType: http
     stage: ${self:provider.stage}
     endpointType: 'regional'
     certificateName: '*.merchandi.xyz'
